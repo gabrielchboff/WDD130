@@ -1,0 +1,82 @@
+body {
+  background-color: #fca6c9;
+  display: block;
+}
+
+section {
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1.title {
+  text-align: center;
+  font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  color: #ffffff;
+}
+
+h1.title:hover {
+  color: black;
+}
+
+p.quote {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ffffff;
+}
+
+p.quoter {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+  font-weight: bold;
+  font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+}
+
+ol {
+  margin: 0 auto;
+  width: fit-content;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+ol li {
+  font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-size: 1.5rem;
+  color: black;
+  font-weight: bold;
+  text-align: left;
+
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 20%;
+}
+
+section.big-quote-container{
+   min-width: 100px;
+   max-width: 500px;
+   padding: 3rem;
+   overflow-wrap: break-word;
+}
+h2.big-quote {
+  font-size: 1.7rem;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+footer {
+  text-align: center;
+  font-family: 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif;
+  font-weight: bold;
+  font-size: 1.0rem;
+  color: black;
+  word-wrap: break-word;
+
+}
+
