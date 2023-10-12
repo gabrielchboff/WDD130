@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
@@ -24,13 +24,19 @@
 }
 
 * {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Arial', 'Roboto', 'Helvetica', sans-serif;
 }
 
 body , html {
   height: 100%;
   margin: 0;
+  padding: 0;
   background-color: var(--paragraph-background-color); 
+  font-size: 22px;
+}
+
+h2 {
+  margin: 0;
 }
 
 section {
@@ -41,7 +47,15 @@ footer {
   background-color: var(--accent1-color);
   padding: 1rem;
   display: block;
+  padding: 25px 50px;
+  margin-top: 200px;
 }
+
+footer .social img{
+  padding-top: 15px;
+
+} 
+
 footer h3 {
   color: var(--primary-color);
   text-align: center;
@@ -62,13 +76,57 @@ footer h3 {
 
 }
 
-nav a {
+.text-center {
   text-align: center;
 }
 
+main section img {
+  box-sizing: border-box;
+}
+
+.msg {
+  line-height: 1.5em;
+  background-color: var(--secondary-color);
+  padding: 30px;
+}
+
+.msg p {
+  padding-bottom: 15px;
+}
+
+nav a {
+  text-align: center;
+  padding: 35px;
+}
+.join, .book{
+  text-align: center;
+  color: var(--primary-color);
+  background-color: var(--accent1-color);
+  padding: 15px 30px;
+  margin-top: 50px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.join:hover {
+
+  background-color: var(--accent2-color);
+  color: var(--accent1-color);
+}
+.book:hover {
+  background-color: var(--accent2-color);
+  color: var(--accent1-color);
+}
+
+
+.icon {
+  padding-top: 10px;
+}
 
 #hero-msg h1, #hero-msg h4 {
   text-align: center;
+  line-height: 1.5em;
 }
 
 #hero-box {
@@ -100,6 +158,7 @@ header {
 
 img.card-img {
   width: 40%;
+  border: 10px solid var(--secondary-color);
 
 }
 
@@ -140,3 +199,18 @@ div.social a {
   font-size: 2em;
 }
 
+.home-title {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: var(--accent2-color);
+  margin-top: 10px;
+}
+
+#logo_link {
+  padding-top: 5px;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+  margin: 200px 0;
+} 
