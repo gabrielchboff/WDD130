@@ -49,10 +49,10 @@ Fonts are separated by a | */
   --paragraph-color-on-white: var(--text-color); /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
   --paragraph-background-color: hsl(var(--hue), 40%, 8%);
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
+  --nav-link-color: white;
+  --nav-background-color: var(--paragraph-background-color);
   --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --nav-hover-background-color: var(--primary-color);
 }
 
 
@@ -173,7 +173,7 @@ nav a:hover {
 }
 .sm-home {
   grid-area: home;
-  background-color: #ccc;
+  background-color: #cc;
   line-height: 3em;
 }
 .sm-page2 {
