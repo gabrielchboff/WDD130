@@ -64,6 +64,8 @@ body {
   padding: 4em;
   font-size: 18px;
   text-align: center;
+  background-color: var(--paragraph-background-color);
+  color: var(--text-color);
 }
 img {
   display: block;
@@ -91,6 +93,67 @@ header > h1, header > h2 {
   color: var(--headline-color-on-color);
 }
 
+ul > a {
+  text-decoration: none;
+  color: var(--nav-link-color);
+
+}
+ul > li {
+  color: var(--accent2-color);
+  text-align: left;
+}
+
+.background2 {
+  background-color: var(--accent2-color);
+  padding: 2em;
+  text-align: center;
+}
+
+div.projects-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4em;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin: 0 auto;
+
+}
+
+div.projects-grid > div > img {
+  width: 100%;
+  object-fit: cover;
+}
+
+
+.profile__social {
+  display: flex;
+  justify-content: center;
+  column-gap: 1.75rem;
+  width: 94%;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+.profile__social-link {
+  font-size: 3rem;
+  color: var(--accent2-color);
+  transition: .3s;
+}
+
+.profile__social-link:hover {
+  color: var(--text-color);
+}
+
+header > img {
+  width: 20%;
+  height: 20%;
+  margin: 0 auto;
+  border-radius: 50%;
+  border: 6px solid var(--primary-color);
+
+}
+
 p {
   font-family: var(--paragraph-font);
   color: var(--paragraph-color-on-white);
@@ -108,6 +171,25 @@ p {
 .colors td{
   width: 25%;
   height: 3em;
+}
+
+div.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 4em;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+  margin: 0 auto;
+
+}
+
+div.skills-grid > div > h2 {
+  color: var(--headline-color-on-color);
+}
+
+.accent2-color {
+  color: var(--accent2-color);
 }
 
 .primary {
@@ -131,20 +213,25 @@ p.colored {
 
 nav {
   background-color: var(--nav-background-color);
-  line-height: 3em;
+  line-height: 1.5em;
   text-align: center;
   font-size: 1.2em;
-}
+  }
+
 nav  {
   list-style-type: none;
   display: flex;
-
+  column-gap: 1.5em;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 1.5em;
 }
 nav a {
-  padding:1em;
+  padding: 1em 1em 1em 1em; 
   min-width: 120px;
   text-decoration: none;
-  padding: 10px;
+
+
 
 }
 nav a:link, nav a:visited {
@@ -173,7 +260,6 @@ nav a:hover {
 }
 .sm-home {
   grid-area: home;
-  background-color: #cc;
   line-height: 3em;
 }
 .sm-page2 {
@@ -203,3 +289,4 @@ nav a:hover {
   border-top: 1px solid;
   border-right: 1px solid;
 }
+
