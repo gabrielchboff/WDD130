@@ -91,12 +91,14 @@ body {
   /* For animation dark mode */
 }
 
+
 h1,
 h2,
 h3 {
   color: var(--title-color);
   font-weight: 600;
 }
+
 
 ul {
   list-style: none;
@@ -108,9 +110,11 @@ li {
   margin: .5rem .5rem .5rem .5rem;
 }
 
+
 a {
   text-decoration: none;
 }
+
 
 img {
   max-width: 100%;
@@ -120,6 +124,8 @@ img {
 .py {
     padding: 1rem 1rem 1rem 1rem;
 }
+
+
 
 
 /*=============== THEME ===============*/
@@ -132,6 +138,7 @@ img {
   cursor: pointer;
   transition: .3s;
 }
+
 
 .change-theme:hover {
   color: var(--first-color);
