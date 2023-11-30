@@ -6,6 +6,17 @@ const selectedTheme = localStorage.getItem('selected-theme');
 const selectedIcon = localStorage.getItem('selected-icon');
 const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line';
+
+document.addEventListener('DOMContentLoaded', function() {
+  if (selectedTheme) {
+    if (selectedTheme !== 'dark') {
+      document.body.classList.add(darkTheme);
+      themeButton.classList.add(iconTheme);
+      themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme);
+    }
+  }
+});
+
 if (selectedTheme) {
   document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme);
   themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme);
@@ -18,6 +29,8 @@ themeButton.addEventListener('click', () => {
   localStorage.setItem('selected-icon', getCurrentIcon());
 
 });
+
+
 const sr = ScrollReveal({
   origin: 'top',
   distance: '60px',
