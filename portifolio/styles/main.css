@@ -105,6 +105,12 @@ ul {
 
 }
 
+ul.list {
+  margin: 0;
+  padding: 0;
+  list-style: circle;
+}
+
 li {
   padding: .5rem;
   margin: .5rem .5rem .5rem .5rem;
@@ -113,6 +119,7 @@ li {
 
 a {
   text-decoration: none;
+  color: #42a5f5;
 }
 
 
@@ -361,7 +368,7 @@ body.dark-theme {
 }
 
 .filters__button:hover {
-  background-color: var(--body-color);
+  background-color: #42a5f5;
 }
 
 /*=============== PROJECTS ===============*/
